@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Information Required!</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your First Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Your Last Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="phone-input">
+                        <select id="countryCode" name="countryCode">
+                            <option value="+234">+234</option>
+                            <!-- Add more country codes here -->
+                        </select>
+                        <input type="tel" id="phone" name="phone" placeholder="8023456789" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="assistanceType">Assistance Type</label>
+                    <select id="assistanceType" name="assistanceType" required>
+                        <option value="">Select</option>
+                        <!-- Add more assistance types here -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="purpose">Purpose of the connect with Support Executive</label>
+                    <textarea id="purpose" name="purpose" placeholder="Typing..." required></textarea>
+                </div>
+                <div class="input-group checkbox">
+                    <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                    <label for="acceptTerms">I hereby accept the T&C of Liquid</label>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <footer>
+            <p style="color: black;"><b>Powered by <span style="color: purple;">Eonverse.AI</span></b></p>
+        </footer>
+    </div>
+</body>
+</html>
